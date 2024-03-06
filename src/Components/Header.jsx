@@ -2,7 +2,7 @@ export default function Header (){
 
     return(
        <header>
-        <h1>Cabeçalho</h1>
+        <h1>MINHA PLAYLIST DO SPOTIFY</h1>
        </header>
     );
 }
