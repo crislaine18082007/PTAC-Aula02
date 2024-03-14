@@ -1,6 +1,14 @@
 header{
     height: 100px;
-    background-color: darkgreen;
-    text-align: center ;
+    background-color: rgb(235, 240, 208);
+    text-align: center; color: #000;
+
+}
+
+
+footer{
+    height: 100px;
+    background-color: rgb(235, 240, 208);
+    color: #000;
 }
 
