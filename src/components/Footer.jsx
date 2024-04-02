@@ -1,7 +1,7 @@
 export default function Footer() {
     return(
         <footer>
-            <p>Desenvolvido por: Crislaine </p>
+            <p>Desenvolvido por Crislaine Cordeiro </p>
 
         </footer>
     )
