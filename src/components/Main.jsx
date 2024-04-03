@@ -3,8 +3,8 @@ import { useState } from "react"
 export default function Main () {
     const [nome, setNome] = useState("");
     const [telefone, setTelefone] = useState("");
-    const [listaContatos, setContatos] = useState([""]);
-    const [idade, setIdade] = useState([""]);
+    const [listaContatos, setListaContatos] = useState([]);
+    const [idade, setIdade] = useState();
 
     const registrar = (event) => {
         event.preventDefault();
@@ -23,7 +23,7 @@ export default function Main () {
     return(
 
         <main>
-            <form>
+            <form onSubmit={registrar}>
                 <label> 
                 Nome:<input 
                 type="text" 
@@ -48,8 +48,14 @@ export default function Main () {
                 value={idade}
                 onChange={(event) => setIdade(event.target.value)}/> 
                 </label>
-                <button>ENVIAR</button>
+                <button>SALVAR</button>
             </form>
+            { listaContatos.map((contato, index) => 
+                <div key={index}>
+            <p> {contato.nomeSalvo}</p>
+            <p> {contato.telefoneSalvo}</p>
+            </div>
+            )  }
         </main>
     )
 }
